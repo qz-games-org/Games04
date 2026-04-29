@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rally Racer Dirt</title>
+<link rel="stylesheet" href="/vs/gameloader2020.css" />
+<script src="/vs/gameloader2020.js"></script>
+<meta name="robots" content="noindex,nofollow" />
+<script src="/vs/cgameloader-helper.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<script type="text/javascript">
+  var options = {
+    author: "valvolex",
+    logo: "logo.png",
+    gameName: "Rally Racer Dirt",
+    gameNameEu: "Rally Racer Dirt",
+    gameUrl: "41246",
+    moreLink: ("./"),
+    allowFullscreen: true,
+    locale: "en_US",
+    loader: "unity2020",
+    loaderOptions: {
+      unityLoaderUrl: "Build/Rally Racer Dirt.loader.js",
+      unityConfigOptions: {
+        dataUrl: "Build/Rally Racer Dirt.data.br",
+        frameworkUrl: "Build/Rally Racer Dirt.framework.js.br",
+          codeUrl: "Build/Rally Racer Dirt.wasm.br",
+        streamingAssetsUrl: "StreamingAssets"
+      }
+    },
+    };
+  GameInit.load(options);   
+  let se = setInterval(() => {
+    if(document.getElementById('canvas')) {
+          document.getElementById('canvas').style.height = window.innerHeight + 'px'
+          clearInterval(se)
+          console.log('cleared')
+    }
+  }, 500);
+</script>
+</body>
+</html>
